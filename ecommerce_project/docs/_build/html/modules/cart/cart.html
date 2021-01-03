@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cart class &#8212; Ecommerce project  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Shop Views" href="../shop/views.html" />
+    <link rel="prev" title="About me" href="../about_me.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-cart.cart">
+<span id="the-cart-class"></span><h1>The Cart class<a class="headerlink" href="#module-cart.cart" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="cart.cart.Cart">
+<em class="property">class </em><code class="sig-prename descclassname">cart.cart.</code><code class="sig-name descname">Cart</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/cart/cart.html#Cart"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cart.cart.Cart" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="cart.cart.Cart.add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">product</span></em>, <em class="sig-param"><span class="n">quantity</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="n">override_quantity</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/cart/cart.html#Cart.add"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cart.cart.Cart.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a product to the cart or update the quantity</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>product</strong> – A <cite>shop.models.Product</cite></p></li>
+<li><p><strong>override_quantity</strong> (<em>boolean</em><em>, </em><em>optional</em>) – self-explanatory</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cart.cart.Cart.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/cart/cart.html#Cart.clear"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cart.cart.Cart.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove cart from session</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cart.cart.Cart.get_total_price">
+<code class="sig-name descname">get_total_price</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/cart/cart.html#Cart.get_total_price"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cart.cart.Cart.get_total_price" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="cart.cart.Cart.remove">
+<code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">product</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/cart/cart.html#Cart.remove"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cart.cart.Cart.remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a product from the cart</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="cart.cart.Cart.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/cart/cart.html#Cart.save"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#cart.cart.Cart.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Ecommerce project</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about_me.html">About me</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Cart class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shop/views.html">Shop Views</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shop/models.html">Shop Models</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../about_me.html" title="previous chapter">About me</a></li>
+      <li>Next: <a href="../shop/views.html" title="next chapter">Shop Views</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Euan Russano.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/modules/cart/cart.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

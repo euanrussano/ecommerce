@@ -15,6 +15,13 @@ class Cart(object):
     def add(self, product, quantity=1, override_quantity=False):
         """
             Add a product to the cart or update the quantity
+
+            :param product: A `shop.models.Product`
+            :type uuids: `shop.models.Product`
+            :param override_quantity: self-explanatory
+            :type override_quantity: boolean, optional
+            :return: None
+            :rtype: None
         """
         product_id = str(product.id)
         if product_id not in self.cart:
