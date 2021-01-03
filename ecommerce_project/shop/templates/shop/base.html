@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}Minha loja{% endblock %}</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            <a href="/" class="logo">Minha loja</a>
+        </div>
+        <div id="subheader">
+            <div class="cart">
+                {% with total_items=cart|length %}
+                    {% if total_items > 0 %}
+                        Sua cesta:
+                        <a href="{% url "cart:cart_detail" %}">
+                            {{ total_items }} item(s) {{ total_items|pluralize }},
+                            ${{ cart.get_total_price }}
+                        </a>
+                        {% else %}
+                        Cesta vazia.
+                        {% endif %}
+                    {% endwith %}
+            </div>
+        </div>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
